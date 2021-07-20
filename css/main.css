@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen > * {
+    width: 100%;
+    height: 100%;
+}
+
+/* .menu-container {
+	display: none; */
+/* } */
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    background: #ff5500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu p {
+    padding: 10px 0;
+    font-family: Consolas;
+    font-size: 30px;
+    color: white;
+}
+
+.menu h1 {
+    font-family: Consolas;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.map-selector,
+.vehicle-selector {
+    display: flex;
+    height: 200px;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.map-selector div {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.map-selector div:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.map-selector div.selected {
+    border: 3px solid white;
+}
+
+.map-selector p,
+.vehicle-selector p {
+    font-family: Consolas;
+    font-size: 25px;
+}
+
+.vehicle-selector div {
+    font-family: Consolas;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.vehicle-selector div:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.vehicle-selector div.selected {
+    border: 3px solid white;
+}
+
+.play-button,
+.restart,
+.return {
+    width: 200px;
+    height: 50px;
+    border: white 1px solid;
+    border-radius: 10px;
+    color: white;
+    font-family: Consolas;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.restart,
+.return {
+    margin-top: 30px;
+}
+
+.play-button:hover,
+.restart:hover,
+.return:hover {
+    background: white;
+    color: black;
+}
+
+.loading,
+.end-screen {
+    display: none;
+    color: white;
+    font-family: Consolas;
+    font-size: 50px;
+    text-align: center;
+    background: #ff5500;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 400px;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.dashboard > div {
+    margin: 10px;
+}
+
+.metrics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time {
+    border: 1px solid white;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Consolas;
+    font-size: 30px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.power-up {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Consolas;
+    font-size: 30px;
+}
+
+.laps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.laps div {
+    border: 1px rgba(255, 255, 255, 0.9) solid;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Consolas;
+    box-sizing: border-box;
+    font-size: 25px;
+    width: 100%;
+    padding: 5px;
+}
+
+.force,
+.brake {
+    width: 50px;
+    height: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to top, blue 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.speed {
+    width: 200px;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Consolas;
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 15px;
+    font-family: Consolas;
+    color: white;
+}
+
+.credits {
+    text-align: center;
+}
