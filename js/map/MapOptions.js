@@ -44,10 +44,10 @@
 
 export const availableMaps = {
 	nightIsland: {
-		thumbnail: "../../models/map/night_island/thumbnail.jpg",
+		thumbnail: "../../models/map/night_island/thumbnail.JPG",
 		name: "Night island",
-		url: "../../models/map/night_island/night_island.gltf",
-		skyBoxUrl: "../../models/skybox/night.gltf",
+		url: "../../models/map/night_island/night_island.GLTF",
+		skyBoxUrl: "../../models/skybox/night.GLTF",
 		startLocation: [-100, -9, 71],
 		startRotation: {
 			x: 0,
