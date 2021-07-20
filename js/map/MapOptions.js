@@ -43,116 +43,116 @@
 } */
 
 export const availableMaps = {
-	nightIsland: {
-		thumbnail: "../../models/map/night_island/thumbnail.JPG",
-		name: "Night island",
-		url: "../../models/map/night_island/night_island.GLTF",
-		skyBoxUrl: "../../models/skybox/night.GLTF",
-		startLocation: [-100, -9, 71],
-		startRotation: {
-			x: 0,
-			y: 0,
-			z: 0,
-		},
-		cameraStart: {
-			rotation: { x: -150, y: 45, z: 75 },
-			test: [0, 0, 0],
-			translation: [50, 300, -50],
-		},
-		trackFriction: 1.0,
-		grassFriction: 0.5,
-		directionalLight: {
-			diffuse: [0.16, 0.15, 0.15],
-			specular: [0.05, 0.05, 0.05],
-			direction: [1, -1, 0],
-		},
-		ambientLight: {
-			intensity: [0.015, 0.01, 0.01],
-		},
-		spotLight: {
-			street_light: {
-				diffuse: [6, 5, 4],
-				specular: [1, 1, 1],
-				direction: [-2, -1, 0],
-				innerCutOff: 5,
-				outerCutOff: 70,
-				cutOff: 80,
-				attenuation: [0.2, 0.2, 0.2],
-				rotateOrigin: {
-					axes: "Z",
-					angle: -25,
-				},
-			},
-		},
-		pointLight: {
-			moon: {
-				diffuse: [150, 150, 150],
-				specular: [0, 0, 0],
-				attenuation: [0.1, 0.1, 0.1],
-			},
-			black_light: {
-				diffuse: [-10, -10, -10],
-				specular: [0, 0, 0],
-				attenuation: [0.3, 0.3, 0.3],
-			},
-		},
-		props: {
-			movable_props: {
-				wheels_block: {
-					mass: 1000,
-					friction: 100,
-				},
-				wheels: {
-					mass: 10,
-					friction: 100,
-				},
-				fence: {
-					mass: 25,
-					friction: 100,
-				},
-			},
-		},
-	},
-	desertIsland: {
-		thumbnail: "../../models/map/desert_island/thumbnail.jpg",
-		name: "Desert island",
-		url: "../../models/map/desert_island/desert_island.gltf",
-		skyBoxUrl: "../../models/skybox/day.gltf",
-		startLocation: [-41, -5, -30],
-		startRotation: {
-			x: 0,
-			y: 0,
-			z: 0,
-		},
-		cameraStart: {
-			rotation: { x: -150, y: 0, z: 0 },
-			translation: [0, 300, -200],
-		},
-		trackFriction: 1.0,
-		grassFriction: 0.5,
-		directionalLight: {
-			diffuse: [0.7, 0.65, 0.65],
-			specular: [0.1, 0.1, 0.1],
-			direction: [1, -1, 0],
-		},
-		ambientLight: {
-			intensity: [0.5, 0.5, 0.5],
-		},
-		spotLight: {},
-		pointLight: {
-			black_lights: {
-				diffuse: [-5, -5, -5],
-				specular: [0, 0, 0],
-				attenuation: [0.4, 0.4, 0.4],
-			},
-		},
-		props: {
-			movable_props: {
-				wheels: {
-					mass: 10,
-					friction: 100,
-				},
-			},
-		},
-	},
+    nightIsland: {
+        thumbnail: "../../assets/models/map/night_island/thumbnail.jpg",
+        name: "Night island",
+        url: "../../assets/models/map/night_island/night_island.GLTF",
+        skyBoxUrl: "../../assets/models/skybox/night.GLTF",
+        startLocation: [-100, -9, 71],
+        startRotation: {
+            x: 0,
+            y: 0,
+            z: 0,
+        },
+        cameraStart: {
+            rotation: { x: -150, y: 45, z: 75 },
+            test: [0, 0, 0],
+            translation: [50, 300, -50],
+        },
+        trackFriction: 1.0,
+        grassFriction: 0.5,
+        directionalLight: {
+            diffuse: [0.16, 0.15, 0.15],
+            specular: [0.05, 0.05, 0.05],
+            direction: [1, -1, 0],
+        },
+        ambientLight: {
+            intensity: [0.015, 0.01, 0.01],
+        },
+        spotLight: {
+            street_light: {
+                diffuse: [6, 5, 4],
+                specular: [1, 1, 1],
+                direction: [-2, -1, 0],
+                innerCutOff: 5,
+                outerCutOff: 70,
+                cutOff: 80,
+                attenuation: [0.2, 0.2, 0.2],
+                rotateOrigin: {
+                    axes: "Z",
+                    angle: -25,
+                },
+            },
+        },
+        pointLight: {
+            moon: {
+                diffuse: [150, 150, 150],
+                specular: [0, 0, 0],
+                attenuation: [0.1, 0.1, 0.1],
+            },
+            black_light: {
+                diffuse: [-10, -10, -10],
+                specular: [0, 0, 0],
+                attenuation: [0.3, 0.3, 0.3],
+            },
+        },
+        props: {
+            movable_props: {
+                wheels_block: {
+                    mass: 1000,
+                    friction: 100,
+                },
+                wheels: {
+                    mass: 10,
+                    friction: 100,
+                },
+                fence: {
+                    mass: 25,
+                    friction: 100,
+                },
+            },
+        },
+    },
+    desertIsland: {
+        thumbnail: "../../assets/models/map/desert_island/thumbnail.jpg",
+        name: "Desert island",
+        url: "../../assets/models/map/desert_island/desert_island.gltf",
+        skyBoxUrl: "../../assets/models/skybox/day.gltf",
+        startLocation: [-41, -5, -30],
+        startRotation: {
+            x: 0,
+            y: 0,
+            z: 0,
+        },
+        cameraStart: {
+            rotation: { x: -150, y: 0, z: 0 },
+            translation: [0, 300, -200],
+        },
+        trackFriction: 1.0,
+        grassFriction: 0.5,
+        directionalLight: {
+            diffuse: [0.7, 0.65, 0.65],
+            specular: [0.1, 0.1, 0.1],
+            direction: [1, -1, 0],
+        },
+        ambientLight: {
+            intensity: [0.5, 0.5, 0.5],
+        },
+        spotLight: {},
+        pointLight: {
+            black_lights: {
+                diffuse: [-5, -5, -5],
+                specular: [0, 0, 0],
+                attenuation: [0.4, 0.4, 0.4],
+            },
+        },
+        props: {
+            movable_props: {
+                wheels: {
+                    mass: 10,
+                    friction: 100,
+                },
+            },
+        },
+    },
 };

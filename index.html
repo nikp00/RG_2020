@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Sky Racing</title>
 
-<head>
-	<title>Sky Racing</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <meta content="utf-8" http-equiv="encoding" />
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <script type="text/javascript" src="js/lib/gl-matrix-min.js"></script>
+        <script type="text/javascript" src="js/lib/ammo.js"></script>
+        <script type="module" src="js/SkyRacing.js"></script>
+        <link
+            rel="icon"
+            href="./assets/img/fav.jpg"
+            type="image/gif"
+            sizes="32x32"
+        />
+    </head>
 
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<meta content="utf-8" http-equiv="encoding" />
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-	<script type="text/javascript" src="js/lib/gl-matrix-min.js"></script>
-	<script type="text/javascript" src="js/lib/ammo.js"></script>
-	<script type="module" src="js/SkyRacing.js"></script>
-	<link rel="icon" href="./img/fav.jpg" type="image/gif" sizes="32x32" />
-</head>
+    <body>
+        <div class="menu-container">
+            <div class="menu">
+                <h1>SKY RACING</h1>
+                <p>Chose a map</p>
+                <div class="map-selector"></div>
+                <p>Chose a vehicle</p>
+                <div class="vehicle-selector"></div>
+                <div class="description">
+                    <p>
+                        Controls: W, A, S, D, SPACE - handbrake / skip start
+                        animation, E - power-up, F - headlights, R - reset, ESC
+                        - return to menu, scroll to zoom.
+                    </p>
+                    <p class="credits">Credits: Nik Prinčič, 2021</p>
+                </div>
+                <div class="play-button">Start</div>
+            </div>
+        </div>
 
-<body>
-	<div class="menu-container">
-		<div class="menu">
-			<h1>SKY RACING</h1>
-			<p>Chose a map</p>
-			<div class="map-selector"></div>
-			<p>Chose a vehicle</p>
-			<div class="vehicle-selector"></div>
-			<div class="description">
-				<p>
-					Controls: W, A, S, D, SPACE - handbrake / skip start animation, E - power-up, F -
-					headlights, R - reset, ESC - return to menu, scroll to zoom.
-				</p>
-				<p class="credits">Credits: Nik Prinčič, 2021</p>
-			</div>
-			<div class="play-button">Start</div>
-		</div>
-	</div>
+        <div class="loading">
+            <p>Loading...</p>
+        </div>
 
-	<div class="loading">
-		<p>Loading...</p>
-	</div>
+        <div class="end-screen">
+            <p>Game over</p>
+            <div class="restart">Restart</div>
+            <div class="return">Return to menu</div>
+        </div>
 
-	<div class="end-screen">
-		<p>Game over</p>
-		<div class="restart">Restart</div>
-		<div class="return">Return to menu</div>
-	</div>
-
-	<div class="dashboard">
-		<div class="time">00:00:00</div>
-		<div class="laps">
-			<div>1. --:--:--</div>
-		</div>
-		<div class="metrics">
-			<div class="force"></div>
-			<div class="brake"></div>
-			<div class="speed">00</div>
-		</div>
-		<div class="power-up">Power up</div>
-	</div>
-	<div class="fullscreen">
-		<canvas></canvas>
-	</div>
-</body>
-
+        <div class="dashboard">
+            <div class="time">00:00:00</div>
+            <div class="laps">
+                <div>1. --:--:--</div>
+            </div>
+            <div class="metrics">
+                <div class="force"></div>
+                <div class="brake"></div>
+                <div class="speed">00</div>
+            </div>
+            <div class="power-up">Power up</div>
+        </div>
+        <div class="fullscreen">
+            <canvas></canvas>
+        </div>
+    </body>
 </html>
