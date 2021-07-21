@@ -46,8 +46,8 @@ export const availableMaps = {
     nightIsland: {
         thumbnail: "/RG_2020/assets/models/map/night_island/thumbnail.jpg",
         name: "Night island",
-        url: "/RG_2020/assets/models/map/night_island/night_island.GLTF",
-        skyBoxUrl: "/RG_2020/assets/models/skybox/night.GLTF",
+        url: "/RG_2020/assets/models/map/night_island/night_island.gltf",
+        skyBoxUrl: "/RG_2020/assets/models/skybox/night.gltf",
         startLocation: [-100, -9, 71],
         startRotation: {
             x: 0,
