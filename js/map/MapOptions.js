@@ -46,8 +46,8 @@ export const availableMaps = {
     nightIsland: {
         thumbnail: "/RG_2020/assets/models/map/night_island/thumbnail.jpg",
         name: "Night island",
-        url: "../assets/models/map/night_island/night_island.GLTF",
-        skyBoxUrl: "../../assets/models/skybox/night.GLTF",
+        url: "/RG_2020/assets/models/map/night_island/night_island.GLTF",
+        skyBoxUrl: "/RG_2020/assets/models/skybox/night.GLTF",
         startLocation: [-100, -9, 71],
         startRotation: {
             x: 0,
@@ -114,10 +114,10 @@ export const availableMaps = {
         },
     },
     desertIsland: {
-        thumbnail: "../../assets/models/map/desert_island/thumbnail.jpg",
+        thumbnail: "/RG_2020/assets/models/map/desert_island/thumbnail.jpg",
         name: "Desert island",
-        url: "../../assets/models/map/desert_island/desert_island.gltf",
-        skyBoxUrl: "../../assets/models/skybox/day.gltf",
+        url: "/RG_2020/assets/models/map/desert_island/desert_island.gltf",
+        skyBoxUrl: "/RG_2020/assets/models/skybox/day.gltf",
         startLocation: [-41, -5, -30],
         startRotation: {
             x: 0,

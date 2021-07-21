@@ -56,8 +56,8 @@ import KERS from "../props/KERS.js";
 export const availableVehicles = {
     formula: {
         name: "Formula",
-        thumbnail: "../../assets/models/vehicle/formula/thumbnail.jpg",
-        url: "../../assets/models/vehicle/formula/formula.gltf",
+        thumbnail: "/RG_2020/assets/models/vehicle/formula/thumbnail.jpg",
+        url: "/RG_2020/assets/models/vehicle/formula/formula.gltf",
         stats: {
             maxSpeed: 80,
             maxEngineForce: 10000,
@@ -106,8 +106,8 @@ export const availableVehicles = {
         },
     },
     police: {
-        thumbnail: "../../assets/models/vehicle/police/thumbnail.jpg",
-        url: "../../assets/models/vehicle/police/police.gltf",
+        thumbnail: "/RG_2020/assets/models/vehicle/police/thumbnail.jpg",
+        url: "/RG_2020/assets/models/vehicle/police/police.gltf",
         name: "Police",
         stats: {
             maxSpeed: 50,
