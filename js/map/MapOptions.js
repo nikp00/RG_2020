@@ -44,7 +44,7 @@
 
 export const availableMaps = {
     nightIsland: {
-        thumbnail: "../assets/models/map/night_island/thumbnail.jpg",
+        thumbnail: "/RG_2020/assets/models/map/night_island/thumbnail.jpg",
         name: "Night island",
         url: "../assets/models/map/night_island/night_island.GLTF",
         skyBoxUrl: "../../assets/models/skybox/night.GLTF",
